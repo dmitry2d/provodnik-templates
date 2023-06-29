@@ -41,6 +41,9 @@
     }
 
     .phone {
+        
+        padding-right: 30px;
+
         a {
             text-decoration: none;
         }
@@ -71,20 +74,30 @@
     }
 
     .hamb {
+        
+        padding-left: 30px;
         display: none;
+
         @media @phone {
+
             display: block;
-            background: url('../img/hamb.svg') no-repeat center center;
-            background-size: 14px 14px;
-            width: 14px;
-            height: 14px;
+            
+            a {
+                
+                display: inline-block;
+                background: url('../img/hamb.svg') no-repeat center center;
+                background-size: 14px 14px;
+                width: 14px;
+                height: 14px;
+                &:hover {
+                    background-image: url('../img/hamb_hov.svg');
+                }
+                &:active {
+                    background-image: url('../img/hamb_press.svg');
+                }
+            }
         }
-        &:hover {
-            background-image: url('../img/hamb_hov.svg');
-        }
-        &:active {
-            background-image: url('../img/hamb_press.svg');
-        }
+
     }
 
 }
