@@ -1,0 +1,60 @@
+
+
+.banner {
+
+    .title {
+        z-index: 10;
+        font-size: 80px;
+        color: @white;
+        max-width: 700px;
+        font-weight: 800;
+        line-height: 0.88;
+    }
+    
+    .subtitle {
+        z-index: 10;
+        font-size: 50px;
+        color: @white;
+        max-width: 800px;
+        font-weight: 500;
+        line-height: 1.1;
+        margin-top: 20px;
+    }
+
+    .wrapper {
+        overflow: hidden;
+        padding: 250px 0;
+    }
+
+    .thing {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        &.thing3 {
+            z-index: 1;
+            display: none;
+        }
+        &.thing2 {
+            z-index: 2;
+            top: unset;
+            bottom: -270px;
+            left: -310px;
+            width: 830px;
+        }
+        &.thing1 {
+            z-index: 3;
+            width: 1090px;
+            top: -400px;
+        }
+        
+    }
+
+
+
+}
