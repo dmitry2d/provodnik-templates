@@ -22,7 +22,10 @@
 <?php 
     include 'header.php';
     include 'banner.php';
+    include 'projects.php';
 ?>
+
+<div style="height: 500px;"></div>
 
 </body>
 

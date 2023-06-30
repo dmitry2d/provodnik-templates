@@ -1,0 +1,68 @@
+
+
+.projects {
+
+    overflow: hidden;
+
+    .wrapper {
+        margin: 100px 0;
+    }
+
+    .items {
+        .flex;
+        .wrap;
+        .space;
+
+        .item {
+
+            min-width: 28%;
+            max-width: 28%;
+            
+            &.title {
+
+                .flex;
+                .center;
+
+                &:before {
+                    position: absolute;
+                    inset: 0;
+                    left: -1000px;
+                    right: 30px;
+                    content: '';
+                    border: 1px solid white;
+                    border-radius: 23px;
+                }
+
+                &:after {
+                    position: absolute;
+                    inset: 0;
+                    left: unset;
+                    width: 3px;
+                    background: url('../img/projects_dots.svg') repeat-y top right;
+                    content: '';
+                }
+
+                .title {
+                    font-size: 64px;
+                    line-height: 0.9;
+                    padding: 30px 0 30px 0;
+
+                    &:after {
+                        position: absolute;
+                        inset: 0;
+                        background: url('../img/projects_slashes.svg') no-repeat;
+                        background-position: 220px 40px;
+                        background-size: 115px;
+                        content: '';
+                    }
+
+                }
+                
+            }
+
+
+
+        }
+
+    }
+}
