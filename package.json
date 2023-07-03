@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css": "lessc ./assets/less/index.less --clean-css --autoprefix=\"last 2 versions\" ./dist/css/index.css"
+    "compile_css": "lessc ./assets/less/index.less --clean-css --autoprefix=\"last 2 versions\" ./dist/css/index.css"
   },
-  "author": "",
+  "author": "volcharo@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "less": "^4.1.3",
